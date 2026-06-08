@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaCampo - Inovação e Consciência Agrícola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Inova<span>Campo</span></div>
+            <nav aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#dados-api">Monitoramento</a></li>
+                </ul>
+            </nav>
+            <button id="btn-alto-contraste" aria-label="Alternar alto contraste">Alto Contraste</button>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="hero" aria-label="Destaque principal">
+            <div class="hero-content">
+                <h1>Inovação Tecnológica com Consciência Ecológica</h1>
+                <p>O futuro da agricultura depende do equilíbrio entre a automação inteligente e a preservação do nosso solo.</p>
+                <a href="#tecnologias" class="btn-primary">Conhecer Soluções</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1563514223326-643bf28a5a8b?auto=format&fit=crop&w=600&q=80" alt="Drone sobrevoando plantação verdejante durante o pôr do sol, representando a tecnologia no campo.">
+            </div>
+        </section>
+
+        <section id="dados-api" class="api-section" aria-live="polite">
+            <h2>Monitoramento em Tempo Real</h2>
+            <p>Conectado à API global de meteorologia para decisões agrícolas conscientes.</p>
+            
+            <div id="loading" class="loading">Carregando dados do campo...</div>
+            
+            <div id="weather-card" class="weather-card hidden">
+                <h3>Previsão Local Atual</h3>
+                <div class="weather-info">
+                    <p><strong>Temperatura:</strong> <span id="temp">--</span>°C</p>
+                    <p><strong>Velocidade do Vento:</strong> <span id="wind">--</span> km/h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 InovaCampo. Cultivando um amanhã mais inteligente e sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
